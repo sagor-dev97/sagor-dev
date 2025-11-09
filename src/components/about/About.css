@@ -1,0 +1,137 @@
+.about
+{
+    margin-top: 100px;
+    padding: 40px;
+}
+
+.container
+{
+    padding: 20px;
+    
+}
+
+.about-title {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.about-section {
+    display: flex; 
+    width: 100%; 
+    
+}
+
+.about-left {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+.about-left img {
+    max-width: none; 
+    height: 300px; 
+    padding-left: 30px;
+    width: 100%;
+    
+
+}
+
+.about-right {
+    flex: 1; 
+    padding-left: 10px; 
+    padding-top: 10px;
+}
+
+.about-skills {
+    margin-top: 20px; 
+}
+
+.about-skill {
+    margin: 5px 0;
+    display: flex;
+    
+}
+
+.about-achivements {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+   
+}
+
+.about-achivement {
+   
+    margin-top: 30px; 
+    display: flex; 
+
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.about-achivement h1 {
+    font-size: 2em; 
+    margin-bottom: 5px; 
+}
+.about-skill hr
+{
+  
+margin-left: 10px;
+outline: none;
+border: none;
+width: 50px;
+border-radius: 50px;
+height: 10px;
+background: linear-gradient(310deg,#1c1c31 0.36%,#087617);
+
+}
+.about-skill p {
+    
+    margin-right: 10px; 
+    width: 70px; 
+}
+
+.about-achivement h1{
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(310deg,#4a4a56 0.36%,#087617);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-achivement p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.about-achivement:hover{
+    transform: scale(1.15);
+    transition: 0.3s;
+}
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.line
+{
+    flex: 1;
+    height: 5px;
+    background-color: #087617;
+    margin: 0 10px; 
+}
+.header-container {
+    display: flex;            /* Use flexbox for alignment */
+    align-items: center;     /* Center items vertically */
+    justify-content: center;  /* Center items horizontally */
+    margin: 20px 0;         /* Add margin for spacing */
+}
+.about-left{
+    width: auto;
+}

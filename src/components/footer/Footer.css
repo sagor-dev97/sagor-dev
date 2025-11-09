@@ -1,0 +1,23 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    /* Example background color */
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer span {
+    transition: color 0.3s ease; /* Transition for color change */
+}
+
+.footer p:hover {
+ color: #087617;
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 50px;
+    width: 100%;
+    transition: transform 0.3s;
+    transform: scale(1.15);
+}

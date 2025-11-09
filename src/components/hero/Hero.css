@@ -1,0 +1,77 @@
+.hero {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+
+.hero img {
+    margin-top: 100px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    object-fit: cover;
+    width: 200px; /* Set width as needed */
+    height: 200px; /* Set height as needed */
+}
+
+.hero h1 {
+    text-align: center;
+    width: 70%;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.hero h2 span {
+    background: linear-gradient(310deg, #7d7db5 0.36%, #087617);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    text-align: center;
+    width: 60%;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.hero-section {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+/* Flex container for Connect and Resume buttons */
+.hero-connect, .hero-resume {
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-flex; /* Use inline-flex to align items horizontally */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    transition: transform 0.5s; /* Specify the property for transition */
+}
+
+/* Specific styles for Connect button */
+.hero-connect {
+    background: linear-gradient(310deg, #1c1c31 0.36%, #087617);
+}
+
+.hero-resume {
+    border: 2px solid #FFF;
+}
+
+/* Hover effects */
+.hero-connect:hover {
+    border: 2px solid white;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.hero-resume:hover {
+    border-color: #B923E1;
+    transform: scale(1.05); /* Slightly scale up on hover */
+}

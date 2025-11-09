@@ -1,0 +1,89 @@
+.Navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+   
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.nav-connect {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(310deg, #1c1c31 0.36%, #087617);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.nav-menu li:hover {
+    border-radius: 5px;
+    background: linear-gradient(310deg, #1c1c31 0.36%, #087617);
+}
+
+.Navbar img {
+    width: 110px;
+    background: transparent;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column; /* Stack items vertically */
+        position: absolute;
+        top: 0; /* Align to the top */
+        left: 0; /* Align to the left */
+        height: 100%; /* Full height */
+        width: 250px; /* Width of the sliding menu */
+       
+        transition: transform 0.3s ease; /* Smooth transition */
+        transform: translateX(-100%); /* Hide off-screen */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show menu when active */
+        transform: translateX(0); /* Slide in */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+        padding: 10px 20px; /* Padding for better click area */
+        transition: background 0.3s;
+    }
+}

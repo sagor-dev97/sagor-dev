@@ -1,0 +1,94 @@
+.container {
+    text-align: center;
+    padding: 40px;
+}
+
+.header-container {
+    display: flex;            
+    align-items: center;     
+    justify-content: center;  
+    margin: 20px 0;         
+}
+
+.line {
+    flex: 1;               
+    height: 5px;           
+    background-color: #087617; 
+    margin: 0 10px;        
+}
+
+.card {
+    position: relative;
+    background-color: #2d322e; 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    width: 300px; 
+    box-shadow: 0 10px 20px rgba(134, 223, 134, 0.1); 
+    transition: transform 0.5s;
+    height: auto; 
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: scale(0.8); 
+}
+
+.button-container {
+    margin-top: 15px; 
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(310deg, #1c1c31 0.36%, #087617); 
+    color: white; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    margin: 5px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    transform: scale(0.8);
+}
+
+.button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+}
+
+.card h5 {
+    margin: 0; 
+    color: #ffffff; 
+}
+
+.card p {
+    color: #f7f1f1; 
+    text-align: left; 
+}
+
+.container img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px 8px 0 0; 
+}
+
+.details {
+    margin-top: 15px;
+    background-color: #2d322e; /* Background color for the details section */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin-bottom: 0px;
+    overflow: auto; /* Allow scrolling if content overflows */
+}
+
+.close-button {
+    position: absolute; /* Position relative to the modal content */
+    top: 10px; /* Position from the top */
+    right: 10px; /* Position from the right */
+    background: none; /* No background */
+    border: none; /* No border */
+    color: rgb(239, 227, 227); /* Color for the close button */
+    font-size: 24px; /* Font size for visibility */
+    cursor: pointer; /* Pointer cursor */
+    z-index: 1; /* Ensure it stays above other content */
+}
